@@ -1,5 +1,10 @@
 function mean(num) {
-	
+    total = 0
+	num = num.toString().split("")
+    for (let i = 0; i < num.length; i++) {
+        total += parseInt(num[i])
+    }
+    return total/num.length
 }
 
 console.log(mean(666), 6)
